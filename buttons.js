@@ -1,10 +1,10 @@
 const buttons = document.getElementsByClassName("button");
 const buttonsAncestor = document.querySelector(".buttons-ancestor");
 const buttonTexts = [
-  ["town", "city", "military", "inn"],
-  ["forest", "grasslands", "desert"],
-  ["rainy", "thunder", "Windy"],
-  ["cavern", "temple"]
+  ["Town", "City", "Military", "Inn","Port"],
+  ["Forest", "Grasslands", "Desert","Riverside","Mountains","Jungle","Glacier","Volcano","Underground"],
+  ["Rain", "Thunderstorm", "Windy"],
+  ["Cave", "Built",]
 ];
 
 //generate all buttons
