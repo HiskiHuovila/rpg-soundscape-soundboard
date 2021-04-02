@@ -5,7 +5,8 @@ import ButtonsContainer from './components/ButtonsContainer';
 import TileAncestor from './components/TileAncestor';
 import { useState } from 'react';
 import ButtonsAncestor from './components/ButtonsAncestor';
-
+import Footer from './components/Footer'
+import Instructions from './components/Instructions';
 
 /*
 const csvFetch = async (path) => {
@@ -53,15 +54,24 @@ function App(props) {
 
 
   return (
-  <div className="app">
-    <div className="tabs is-centered is-boxed is-medium">
-      <TabParent all={all} active={activeTree} setActiveTab={setActiveTab}></TabParent>
+  <div className="app is-tall">    
+       <div className="container is-centered level section">
+      <Instructions />
     </div>
-      <ButtonsAncestor all={all} active={activeTree} setActiveButton={setActiveButton}></ButtonsAncestor>
-     <div className="container is-centered">
+    <section>
+      <div className="tabs is-centered is-boxed is-medium">
+        <TabParent all={all} active={activeTree} setActiveTab={setActiveTab}></TabParent>
+      </div>
+      <div className="container is-centered level">
+        <ButtonsAncestor all={all} active={activeTree} setActiveButton={setActiveButton}></ButtonsAncestor>
+      </div>
+    </section>
+     <div className="tile-container hero is-small">
         <TileAncestor all={all} active={activeTree}></TileAncestor>
       </div>
+      <Footer/>
   </div>
+  
   );
 }
 

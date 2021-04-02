@@ -7,8 +7,8 @@ export default function (props) {
     console.log(button)
     const tiles = ['a','b']
     return(
-        <div className="tile is-parent" style={{flexWrap: 'wrap', justifyContent: 'space-around'}}>
-            {button.map( (item) => <Tile text={item.source} key={item.source} music={item.music}></Tile>)}
+        <div className="tile is-parent" style={{flexWrap: 'wrap', justifyContent: 'center'}}>
+            {button.map( (item) => <Tile text={item.source} key={item.source} music={item.music === "TRUE"}></Tile>)}
         </div>
     );
 }
