@@ -8,7 +8,7 @@ export default function (props) {
 
     return(
         <div className="container is-centered buttons-ancestor">
-            {containers.filter( (item) => item === props.active[0]).map( (item) => <ButtonsContainer all={props.all[item]} active={props.active} setActiveButton={props.setActiveButton}></ButtonsContainer>)}
+            {containers.filter( (item) => item === props.active[0]).map( (item) => <ButtonsContainer all={props.all[item]} active={props.active} setActiveButton={props.setActiveButton} key={item}></ButtonsContainer>)}
         </div>
     );
 }

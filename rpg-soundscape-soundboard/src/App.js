@@ -6,17 +6,38 @@ import TileAncestor from './components/TileAncestor';
 import { useState } from 'react';
 import ButtonsAncestor from './components/ButtonsAncestor';
 
-function App() {
-  
-  const all = 
-  {
+
+/*
+const csvFetch = async (path) => {
+  return new Promise(resolve => {
+    Papa.parse(path, {
+    download: true,
+    header: true,
+    complete: results => {
+      resolve(results.data);
+    }
+    })
+  })
+}
+
+const fetchData = async () => {
+  return await csvFetch(data.default); 
+}
+*/
+let all = 
+  {/*
     Civilized:{ Town:[], City:[], Military:[], Inn:[],Port:[] }, 
-    Wilderness:{Forest:[], Grasslands:[], Desert:[], Riverside:[],Mountains:[],Jungle:[],Glacier:[],Volcano:[],Underground:[]
-  },
+    Wilderness:{Forest:[], Grasslands:[], Desert:[], Riverside:[],Mountains:[],Jungle:[],Glacier:[],Volcano:[],Underground:[]},
     Weather:{ Rain:[], Thunderstorm: [], Windy: []},
     Dungeon:{ Cave:[], Built:[]}
+    */
   };
 
+function App(props) {
+
+  console.log(props.data)
+
+  all = props.data
   //for tabs and buttons to set active
   const [activeTree, setActiveTree] = useState([Object.keys(all)[0],Object.keys(all[Object.keys(all)[0]])[0]])
 
@@ -38,7 +59,7 @@ function App() {
     </div>
       <ButtonsAncestor all={all} active={activeTree} setActiveButton={setActiveButton}></ButtonsAncestor>
      <div className="container is-centered">
-        <TileAncestor all={all}></TileAncestor>
+        <TileAncestor all={all} active={activeTree}></TileAncestor>
       </div>
   </div>
   );

@@ -1,7 +1,11 @@
 import React from "react";
 
 export default function (props) {
+
+    const htmlString = props.text
     return(
-        <div className="tile is-centered notification ${color} displayindex-${index} songlink is-child box">{props.text}</div>
+        <div className="is-centered is-child box" key={props.text}>
+            <div dangerouslySetInnerHTML={{ __html: htmlString, }}/>
+            </div>
     );
 }

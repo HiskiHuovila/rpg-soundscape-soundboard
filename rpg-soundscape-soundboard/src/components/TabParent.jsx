@@ -5,7 +5,7 @@ export default function(props) {
     const tabs = Object.keys(props.all)
     return(
        <ul className="tabParent">
-           {tabs.map( (item) => {return <Tab text={item} active={props.active[0] === item} setActiveTab={props.setActiveTab}></Tab>})}
+           {tabs.map( (item) => {return <Tab text={item} active={props.active[0] === item} setActiveTab={props.setActiveTab} key={item}></Tab>})}
        </ul>
     );
 }
