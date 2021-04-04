@@ -1,10 +1,14 @@
 import React from "react";
-import TileParent from "./TileParent"
+import Tile from "./Tile"
 
 export default function (props) {
+    const tab = props.all[props.active[0]];
+    const button = tab[props.active[1]]
     return(
         <div className={"tile is-ancestor hero-body"}>
-            <TileParent all={props.all} active={props.active} ></TileParent>
+            <div className="tile is-parent" style={{flexWrap: 'wrap', justifyContent: 'center'}}>
+            {button.map( (item) => <Tile text={item.source} key={item.source} music={item.music === "TRUE"} pinFunction={props.pinFunction}></Tile>)}
+        </div>
         </div>
     );
 }

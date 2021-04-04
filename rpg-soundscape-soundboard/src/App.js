@@ -7,6 +7,7 @@ import { useState } from 'react';
 import ButtonsAncestor from './components/ButtonsAncestor';
 import Footer from './components/Footer'
 import Instructions from './components/Instructions';
+import Sidebar from './components/Sidebar';
 
 /*
 const csvFetch = async (path) => {
@@ -41,6 +42,7 @@ function App(props) {
   all = props.data
   //for tabs and buttons to set active
   const [activeTree, setActiveTree] = useState([Object.keys(all)[0],Object.keys(all[Object.keys(all)[0]])[0]])
+  const [pinned, setPinned] = useState(["",false]);
 
   const setActiveTab = (tab) => {
     console.log(tab)
@@ -50,6 +52,10 @@ function App(props) {
   const setActiveButton = (button) => {
     console.log(button)
     setActiveTree([activeTree[0], button])
+  }
+
+  const pinTile = (input,music) => {
+    setPinned([input,music]);
   }
 
 
@@ -67,9 +73,10 @@ function App(props) {
       </div>
     </section>
      <div className="tile-container hero is-small">
-        <TileAncestor all={all} active={activeTree}></TileAncestor>
+        <TileAncestor all={all} active={activeTree} pinFunction={pinTile}></TileAncestor>
       </div>
       <Footer/>
+      <Sidebar pinned={pinned} />
   </div>
   
   );

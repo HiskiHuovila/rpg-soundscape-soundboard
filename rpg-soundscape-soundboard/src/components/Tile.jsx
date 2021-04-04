@@ -8,8 +8,9 @@ export default function (props) {
     if(props.music) musicBg = "#0A1B2A"
 
     return(
-        <div className="is-centered is-child box" key={props.text} style={{backgroundColor: musicBg, margin:'5px'}}>
+        <div className="is-centered is-child box" key={props.text} style={{backgroundColor: musicBg, margin:'5px', position: 'relative'}}>
+            <div className="pinButton" onClick={() => props.pinFunction(htmlString, props.music)}></div>
             <div dangerouslySetInnerHTML={{ __html: htmlString, }}/>
-            </div>
+        </div>
     );
 }

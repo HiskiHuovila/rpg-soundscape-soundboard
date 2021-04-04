@@ -30,3 +30,24 @@ code {
   flex-direction: column;
   justify-content: space-between;
 }
+
+.pinButton {
+  display: block;
+  position: absolute;
+  top:-10px;
+  left: -10px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: gray;
+  background-image: url(icons/push_pin_white_24dp.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.pinButton:hover {
+  background-image: url(icons/push_pin_black_24dp.svg);
+  background-color: lightgray;
+} 
