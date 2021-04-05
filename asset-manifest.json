@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/rpg-soundscape-soundboard/static/css/main.8971bf4d.chunk.css",
+    "main.js": "/rpg-soundscape-soundboard/static/js/main.eaedc311.chunk.js",
+    "main.js.map": "/rpg-soundscape-soundboard/static/js/main.eaedc311.chunk.js.map",
+    "runtime-main.js": "/rpg-soundscape-soundboard/static/js/runtime-main.ce4e5058.js",
+    "runtime-main.js.map": "/rpg-soundscape-soundboard/static/js/runtime-main.ce4e5058.js.map",
+    "static/css/2.4324847d.chunk.css": "/rpg-soundscape-soundboard/static/css/2.4324847d.chunk.css",
+    "static/js/2.2f854838.chunk.js": "/rpg-soundscape-soundboard/static/js/2.2f854838.chunk.js",
+    "static/js/2.2f854838.chunk.js.map": "/rpg-soundscape-soundboard/static/js/2.2f854838.chunk.js.map",
+    "static/js/3.99b9d477.chunk.js": "/rpg-soundscape-soundboard/static/js/3.99b9d477.chunk.js",
+    "static/js/3.99b9d477.chunk.js.map": "/rpg-soundscape-soundboard/static/js/3.99b9d477.chunk.js.map",
+    "index.html": "/rpg-soundscape-soundboard/index.html",
+    "static/css/2.4324847d.chunk.css.map": "/rpg-soundscape-soundboard/static/css/2.4324847d.chunk.css.map",
+    "static/css/main.8971bf4d.chunk.css.map": "/rpg-soundscape-soundboard/static/css/main.8971bf4d.chunk.css.map",
+    "static/js/2.2f854838.chunk.js.LICENSE.txt": "/rpg-soundscape-soundboard/static/js/2.2f854838.chunk.js.LICENSE.txt",
+    "static/media/arrow_forward_ios_white_24dp.5051f98a.svg": "/rpg-soundscape-soundboard/static/media/arrow_forward_ios_white_24dp.5051f98a.svg",
+    "static/media/data.csv": "/rpg-soundscape-soundboard/static/media/data.e7fba9a7.csv",
+    "static/media/logo.6ce24c58.svg": "/rpg-soundscape-soundboard/static/media/logo.6ce24c58.svg",
+    "static/media/index.css": "/rpg-soundscape-soundboard/static/media/push_pin_white_24dp.38906098.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ce4e5058.js",
+    "static/css/2.4324847d.chunk.css",
+    "static/js/2.2f854838.chunk.js",
+    "static/css/main.8971bf4d.chunk.css",
+    "static/js/main.eaedc311.chunk.js"
+  ]
+}
