@@ -7,7 +7,7 @@ export default function (props) {
     return(
         <div className={"tile is-ancestor hero-body"}>
             <div className="tile is-parent" style={{flexWrap: 'wrap', justifyContent: 'center'}}>
-            {button.map( (item) => <Tile text={item.source} key={item.source} music={item.music === "TRUE"} pinFunction={props.pinFunction}></Tile>)}
+            {button.map( (item) => <Tile text={item.source} key={item.source} music={item.music === "TRUE"} pinFunction={props.pinFunction} forceSidebarOpen={props.forceSidebarOpen}></Tile>)}
         </div>
         </div>
     );

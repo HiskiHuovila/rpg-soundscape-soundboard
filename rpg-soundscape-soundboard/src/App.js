@@ -1,7 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
 import TabParent from './components/TabParent';
-import ButtonsContainer from './components/ButtonsContainer';
 import TileAncestor from './components/TileAncestor';
 import { useState } from 'react';
 import ButtonsAncestor from './components/ButtonsAncestor';
@@ -42,15 +41,17 @@ function App(props) {
   all = props.data
   //for tabs and buttons to set active
   const [activeTree, setActiveTree] = useState([Object.keys(all)[0],Object.keys(all[Object.keys(all)[0]])[0]])
-  const [pinned, setPinned] = useState(["",false]);
+  const firstInAll = all[Object.keys(all)[0]][Object.keys(all[Object.keys(all)[0]])[0]][0]
+  const [pinned, setPinned] = useState([firstInAll.source,firstInAll.music === "TRUE"]);
+  const [sidebarOpen, setSidebarStatus] = useState(false);
+
+
 
   const setActiveTab = (tab) => {
-    console.log(tab)
     setActiveTree([tab, Object.keys(all[tab])[0]])
   }
 
   const setActiveButton = (button) => {
-    console.log(button)
     setActiveTree([activeTree[0], button])
   }
 
@@ -58,6 +59,13 @@ function App(props) {
     setPinned([input,music]);
   }
 
+  const sidebarStatus = () => {
+    setSidebarStatus(!sidebarOpen)
+}
+
+  const forceSidebarOpen = () => {
+    setSidebarStatus(true)
+  }
 
   return (
   <div className="app is-tall">    
@@ -73,10 +81,10 @@ function App(props) {
       </div>
     </section>
      <div className="tile-container hero is-small">
-        <TileAncestor all={all} active={activeTree} pinFunction={pinTile}></TileAncestor>
+        <TileAncestor all={all} active={activeTree} pinFunction={pinTile} forceSidebarOpen={forceSidebarOpen}></TileAncestor>
       </div>
       <Footer/>
-      <Sidebar pinned={pinned} />
+      <Sidebar pinned={pinned} sidebarStatus={sidebarStatus} sidebarOpen={sidebarOpen}/>
   </div>
   
   );

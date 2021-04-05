@@ -1,14 +1,20 @@
 import React from 'react'
-
+import GitHubButton from 'react-github-btn' 
 export default function (props) {
     return(
     <footer className="footer">
-    <div className="content has-text-centered">
-      <p>
-        <strong>Bulma</strong> by <a href="https://jgthms.com">Jeremy Thomas</a>. The source code is licensed
-        <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
-        is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
-      </p>
+    <div className="level">
+      <section className="level-item">Powered by Spotify</section>
+      <a className="level-item" href="https://bulma.io">
+      <img
+       src="https://bulma.io/images/made-with-bulma.png"
+       alt="Made with Bulma"
+        width="128"
+       height="24"/>
+       </a>
+       <div className="level-item">Made with <a href="https://reactjs.org">React</a></div>
+      <div className="level-item"><GitHubButton href="https://github.com/HiskiHuovila" data-size="large" aria-label="Follow @HiskiHuovila on GitHub">Follow @HiskiHuovila</GitHubButton></div>
+    <a className="level-item" href="license.html">License</a>
     </div>
   </footer>)
 }

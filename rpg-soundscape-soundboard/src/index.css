@@ -1,4 +1,4 @@
-@import "https://github.com/necolas/normalize.css";
+@import '~@csstools/normalize.css';
 @import "https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css";
 
 body {
@@ -31,7 +31,7 @@ code {
   justify-content: space-between;
 }
 
-.pinButton {
+.pinTileButton {
   display: block;
   position: absolute;
   top:-10px;
@@ -47,7 +47,7 @@ code {
   cursor: pointer;
 }
 
-.pinButton:hover {
+.pinTileButton:hover {
   background-image: url(icons/push_pin_black_24dp.svg);
   background-color: lightgray;
 } 

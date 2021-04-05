@@ -13,8 +13,7 @@ Papa.parse(data.default, {
   header: true,
   complete: function(results) {
     const parsedData = lodash.groupBy(results.data, i => i.tab)
-    const finalData = lodash.mapValues(parsedData, i =>  lodash.groupBy(i, j => j.button) )
-    
+    const finalData = lodash.omit(lodash.mapValues(parsedData, i =>  lodash.groupBy(i, j => j.button)),"")
     ReactDOM.render(
       <React.StrictMode>
         <App data={finalData} />

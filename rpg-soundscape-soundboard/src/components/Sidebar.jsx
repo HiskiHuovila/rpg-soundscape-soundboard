@@ -4,11 +4,12 @@ import Tile from './Tile'
 import arrowWhite from "../icons/arrow_forward_ios_white_24dp.svg"
 function Sidebar (props){
 
-    const [sidebarOpen, setSidebarStatus] = useState(false);
+    const sidebarOpen = props.sidebarOpen
+    const sidebarStatus  = props.sidebarStatus
 
-    let sideBarleft = '0px';
+    let sideBarleft = '-330px';
     if(sidebarOpen) 
-        sideBarleft = '-320px'
+        sideBarleft = '0px'
 
     const sidebarStyle = {
         position: 'fixed',
@@ -22,6 +23,7 @@ function Sidebar (props){
         pointerEvents: 'none'
     }
     
+    console.log(props.pinned)
     let musicBg = "#2A0A12"
     if(props.pinned[1]) musicBg = "#0A1B2A"
 
@@ -32,8 +34,8 @@ function Sidebar (props){
         backgroundColor: musicBg 
     }
 
-    let arrowRotation = 'rotate(180deg)'
-    if(sidebarOpen) arrowRotation = 'rotate(0deg)'
+    let arrowRotation = 'rotate(0deg)'
+    if(sidebarOpen) arrowRotation = 'rotate(180deg)'
 
     const buttonStyle = {
         zIndex: '100',
@@ -49,17 +51,12 @@ function Sidebar (props){
         cursor: 'pointer'
     }
 
-    const sidebarStatus = () => {
-        setSidebarStatus(!sidebarOpen)
-        console.log(sidebarOpen)
-    }
-        
-
-
     return(
         <aside style={sidebarStyle}>
-            <div className={"tile is-parent"} style={tileStyle}>
-             <div className={"tile"} dangerouslySetInnerHTML={{ __html: props.pinned[0], }} style={tileStyle}/>
+            <div className={"tile is-ancestor"}>
+                <div className="tile is-parent">
+                     <div className={"is-centered is-child box"} dangerouslySetInnerHTML={{ __html: props.pinned[0], }} style={tileStyle}/>
+                </div>
             </div>
             <div onClick={sidebarStatus} style={buttonStyle}></div>
         </aside>
