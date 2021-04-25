@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function (props) {
+ function Button(props) {
     
     let active = ""
     if(props.active) active = "is-selected is-dark"
@@ -9,3 +9,4 @@ export default function (props) {
         <a className={"button " + active} onClick={() => props.setActiveButton(props.text)} key={props.text}>{props.text}</a>
     );
 }
+export default Button;

@@ -1,6 +1,6 @@
 import React from 'react'
 import Button from './Button'
-export default function (props) {
+function ButtonsContainer(props) {
 
     const buttons = Object.keys(props.all)
     return(
@@ -9,3 +9,4 @@ export default function (props) {
         </div>
     );
 }
+export default ButtonsContainer;

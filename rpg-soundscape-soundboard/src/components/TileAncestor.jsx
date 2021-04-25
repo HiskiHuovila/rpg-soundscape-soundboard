@@ -1,7 +1,7 @@
 import React from "react";
 import Tile from "./Tile"
 
-export default function (props) {
+function TileAncestor(props) {
     const tab = props.all[props.active[0]];
     const button = tab[props.active[1]]
     return(
@@ -12,3 +12,4 @@ export default function (props) {
         </div>
     );
 }
+export default TileAncestor;

@@ -1,6 +1,6 @@
 import React from "react"
 import Tab from "./Tab"
-export default function(props) {
+function TabParent(props) {
     
     const tabs = Object.keys(props.all)
     return(
@@ -9,3 +9,4 @@ export default function(props) {
        </ul>
     );
 }
+export default TabParent;

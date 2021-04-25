@@ -1,6 +1,6 @@
 import React from 'react'
 import GitHubButton from 'react-github-btn' 
-export default function (props) {
+function Footer(props) {
     return(
     <footer className="footer">
     <div className="level">
@@ -14,7 +14,8 @@ export default function (props) {
        </a>
        <div className="level-item">Made with <a href="https://reactjs.org">React</a></div>
       <div className="level-item"><GitHubButton href="https://github.com/HiskiHuovila" data-size="large" aria-label="Follow @HiskiHuovila on GitHub">Follow @HiskiHuovila</GitHubButton></div>
-    <a className="level-item" href="license.html">License</a>
+    <a className="level-item" href="./license.html" target="_blank">License</a>
     </div>
   </footer>)
 }
+export default Footer;

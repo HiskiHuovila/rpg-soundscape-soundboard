@@ -27,7 +27,7 @@ const fetchData = async () => {
 */
 let all = 
   {/*
-    Civilized:{ Town:[], City:[], Military:[], Inn:[],Port:[] }, 
+    Civilized:{ Town:{}, City:[], Military:[], Inn:[],Port:[] }, 
     Wilderness:{Forest:[], Grasslands:[], Desert:[], Riverside:[],Mountains:[],Jungle:[],Glacier:[],Volcano:[],Underground:[]},
     Weather:{ Rain:[], Thunderstorm: [], Windy: []},
     Dungeon:{ Cave:[], Built:[]}

@@ -1,6 +1,5 @@
 import React from "react";
-
-export default function (props) {
+function Tile(props) {
 
     const htmlString = props.text
 
@@ -14,3 +13,5 @@ export default function (props) {
         </div>
     );
 }
+
+export default Tile;

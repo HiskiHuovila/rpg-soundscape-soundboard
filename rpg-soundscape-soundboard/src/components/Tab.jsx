@@ -1,6 +1,6 @@
 import React from "react"
 
-export default function (props) {
+function Tab(props) {
    let active = ""
 
    if(props.active) active = "is-active"
@@ -16,3 +16,4 @@ export default function (props) {
     );
 
 }
+export default Tab;

@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function (props) {
+function Instructions(props) {
     return(
         <section>
             <h4>Welcome to</h4>
@@ -12,3 +12,4 @@ export default function (props) {
         </section>
     )
 }
+export default Instructions;
