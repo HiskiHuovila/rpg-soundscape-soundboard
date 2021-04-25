@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import TabParent from './components/TabParent';
 import TileAncestor from './components/TileAncestor';

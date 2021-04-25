@@ -1,6 +1,4 @@
 import React from 'react'
-import { useState } from 'react';
-import Tile from './Tile'
 import arrowWhite from "../icons/arrow_forward_ios_white_24dp.svg"
 function Sidebar (props){
 

@@ -6,7 +6,7 @@ import React from "react";
     if(props.active) active = "is-selected is-dark"
 
     return(
-        <a className={"button " + active} onClick={() => props.setActiveButton(props.text)} key={props.text}>{props.text}</a>
+        <div className={"button " + active} onClick={() => props.setActiveButton(props.text)} key={props.text}>{props.text}</div>
     );
 }
 export default Button;

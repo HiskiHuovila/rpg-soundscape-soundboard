@@ -7,11 +7,11 @@ function Tab(props) {
 
     return(
         <li className={"tab " +  active} key={props.text}>
-            <a onClick={ () => props.setActiveTab(props.text)}>
+            <div onClick={ () => props.setActiveTab(props.text)}>
                 <span>
                     {props.text}
                 </span>
-            </a>
+            </div>
         </li>
     );
 
