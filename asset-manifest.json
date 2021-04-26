@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/rpg-soundscape-soundboard/static/css/main.8971bf4d.chunk.css",
-    "main.js": "/rpg-soundscape-soundboard/static/js/main.6e8a2806.chunk.js",
-    "main.js.map": "/rpg-soundscape-soundboard/static/js/main.6e8a2806.chunk.js.map",
+    "main.js": "/rpg-soundscape-soundboard/static/js/main.2fec6b6d.chunk.js",
+    "main.js.map": "/rpg-soundscape-soundboard/static/js/main.2fec6b6d.chunk.js.map",
     "runtime-main.js": "/rpg-soundscape-soundboard/static/js/runtime-main.ce4e5058.js",
     "runtime-main.js.map": "/rpg-soundscape-soundboard/static/js/runtime-main.ce4e5058.js.map",
     "static/css/2.4324847d.chunk.css": "/rpg-soundscape-soundboard/static/css/2.4324847d.chunk.css",
@@ -23,6 +23,6 @@
     "static/css/2.4324847d.chunk.css",
     "static/js/2.2f854838.chunk.js",
     "static/css/main.8971bf4d.chunk.css",
-    "static/js/main.6e8a2806.chunk.js"
+    "static/js/main.2fec6b6d.chunk.js"
   ]
 }
